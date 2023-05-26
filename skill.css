@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills_section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    color: white;
+    font-size: 100px;
+    margin-bottom: -5px;
+}
+.skills_head p {
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+}
+.skills_head h2 span{
+    color: #fc82f6;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(105, 105, 105);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#ffb9fc , #9c0295);
+    border-radius: 25px;
+}
+.skill_bar .bar .python{
+    width: 85%;
+    animation: python 2s;
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%
+    }
+}
+.skill_bar .bar .sql{
+    width: 75%;
+    animation: sql 2s;
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .pb{
+    width: 80%;
+    animation: pb 2s;
+}
+@keyframes pb {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .html{
+    width: 70%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .css{
+    width: 65%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .seo{
+    width: 80%;
+    animation: seo 2s;
+}
+@keyframes seo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .ps{
+    width: 90%;
+    animation: ps 2s;
+}
+@keyframes ps {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .solve{
+    width: 95%;
+    animation: solve 2s;
+}
+@keyframes solve {
+    0%{
+        width: 0%;
+    }100%{
+        width: 95%;
+    }
+}
+.skill_bar .bar .com{
+    width: 95%;
+    animation: com 2s;
+}
+@keyframes com {
+    0%{
+        width: 0%;
+    }100%{
+        width: 95%;
+    }
+}
+.skill_bar .bar .pm{
+    width: 90%;
+    animation: pm 2s;
+}
+@keyframes pm {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ffe0fd , #ff97fa , #fc32f2);
+}
